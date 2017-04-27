@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8"></meta>
+<link href="css/bootstrap.min.css" rel="stylesheet"></link>
+<link href="css/font-awesome.min.css" rel="stylesheet"></link>
+<link href="css/prettyPhoto.css" rel="stylesheet"></link>
+<link href="css/price-range.css" rel="stylesheet"></link>
+<link href="css/animate.css" rel="stylesheet"></link>
+<link href="css/main.css" rel="stylesheet"></link>
+<link href="css/responsive.css" rel="stylesheet"></link>
+</head>
+
+<body>
+	<section id="form">
+		<!--form-->
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="signup-form">
+						<p th:text="${status}"></p>
+						<!--sign up form-->
+						<h2>Cadastrar!</h2>
+						<form th:action="@{/cadastro}" method="post">
+							<input id="usuario" name="usuario" type="text" placeholder="Usuário"></input> 
+							<input id="senha" name="senha" type="password" placeholder="Senha"></input>
+							<button type="submit" class="btn btn-default">Cadastrar</button>
+						</form>
+					</div>
+					<!--/sign up form-->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--/form-->
+</body>
+
+</html>
